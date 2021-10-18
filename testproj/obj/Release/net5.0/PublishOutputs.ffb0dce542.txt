@@ -1,0 +1,4 @@
+/Users/rchockalingam/Projects/training/testproj.dll
+/Users/rchockalingam/Projects/training/testproj.deps.json
+/Users/rchockalingam/Projects/training/testproj.runtimeconfig.json
+/Users/rchockalingam/Projects/training/testproj.pdb

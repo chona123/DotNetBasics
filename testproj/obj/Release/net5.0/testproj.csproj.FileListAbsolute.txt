@@ -1,0 +1,15 @@
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/testproj.deps.json
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/testproj.runtimeconfig.json
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/testproj.runtimeconfig.dev.json
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/testproj.dll
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/ref/testproj.dll
+/Users/rchockalingam/Projects/training/testproj/testproj/bin/Release/net5.0/testproj.pdb
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.csproj.AssemblyReference.cache
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.AssemblyInfoInputs.cache
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.AssemblyInfo.cs
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.csproj.CoreCompileInputs.cache
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.dll
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/ref/testproj.dll
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.pdb
+/Users/rchockalingam/Projects/training/testproj/testproj/obj/Release/net5.0/testproj.genruntimeconfig.cache
