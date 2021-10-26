@@ -1,0 +1,20 @@
+﻿@model MvcEcart.viewdataModel.CategoryviewModel
+
+@{
+    ViewBag.Title = "Explore";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<h2>Index</h2>
+<div class=" container">
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Category:
+            <div>
+                @Html.DropDownListFor(model => model.categoryId, new SelectList(Model.categorySelectListItem, dataValueField: "Value", dataTextField: "Text"),
+            htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+</div>

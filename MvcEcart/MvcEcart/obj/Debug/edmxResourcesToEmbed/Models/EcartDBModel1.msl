@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ECartDBModelStoreContainer" CdmEntityContainer="ECartDBEntities">
+    <EntitySetMapping Name="categoryIds">
+      <EntityTypeMapping TypeName="ECartDBModel.categoryId">
+        <MappingFragment StoreEntitySet="categoryId">
+          <ScalarProperty Name="categoryId1" ColumnName="categoryId" />
+          <ScalarProperty Name="categorycode" ColumnName="categorycode" />
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="items">
+      <EntityTypeMapping TypeName="ECartDBModel.item">
+        <MappingFragment StoreEntitySet="items">
+          <ScalarProperty Name="itemId" ColumnName="itemId" />
+          <ScalarProperty Name="cateogoryId" ColumnName="cateogoryId" />
+          <ScalarProperty Name="itemCode" ColumnName="itemCode" />
+          <ScalarProperty Name="itemName" ColumnName="itemName" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="imagePath" ColumnName="imagePath" />
+          <ScalarProperty Name="itemPrice" ColumnName="itemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

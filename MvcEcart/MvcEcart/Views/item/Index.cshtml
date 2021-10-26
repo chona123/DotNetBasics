@@ -1,0 +1,130 @@
+﻿@model MvcEcart.viewdataModel.itemviewModel
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<h2>Add Items</h2>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/jquery-1.10.2.intellisense.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script type="text/javascript">
+   
+    $(document).ready(function () {
+        $("#btnsave").click(function () {
+            saveItem();
+        });
+    });
+    function ResetItem() {
+        $("#categoryId").val("");
+        $("#itemCode").val("");
+        $("#itemName").val("");
+        $("#description").val("");
+        $("#imagePath").val("");
+        $("#itemPrice").val("");
+
+    }
+
+    function saveItem() {
+        var formData = new formData;
+        formData.append("categoryId", $("#categoryId").val());
+        formData.append("itemCode", $("#itemCode").val());
+        formData.append("itemName", $("#itemName").val()); 
+        formData.append("itemPrice", $("#itemPrice").val());
+        formData.append("description", $("#description").val());
+        formData.append("imagePath", $("#imagePath").get(0).files[0]);
+
+        $.ajax({
+            async: true,
+            dataType: "JSON",
+            type: "POST",
+            contentType: false,
+            processData: false,
+            url: "/item/Index",
+            data: formData,
+            success: function (data) {
+                if (data.success)
+                {
+                    alert(data.Message);
+                    ResetItem();
+                }
+                
+            },
+
+            error: function () {
+                alert("There is some problem to add item.");
+            },
+
+
+        });
+
+
+    }
+
+</script>
+
+
+
+<div class=" container">
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Category:
+            @Html.DropDownListFor(model => model.categoryId, new SelectList(Model.categorySelectListItem, dataValueField: "Value", dataTextField: "Text"),
+            htmlAttributes: new { @class = "form-control" })
+        </div>
+    </div>
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Item Code:
+            @Html.TextBoxFor(expression: model => model.itemCode,
+            htmlAttributes: new { @class = "form-control", autocomplete = "off" })
+        </div>
+    </div>
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Item Name:
+            @Html.TextBoxFor(expression: model => model.itemName,
+            htmlAttributes: new { @class = "form-control", autocomplete = "off" })
+        </div>
+    </div>
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Item Price:
+            @Html.TextBoxFor(expression: model => model.itemPrice,
+            htmlAttributes: new { @class = "form-control", autocomplete = "off" })
+        </div>
+    </div>
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Description:
+            @Html.TextBoxFor(expression: model => model.description,
+              htmlAttributes: new { @class = "form-control", autocomplete = "off" })
+        </div>
+    </div>
+
+    <div class=" col-lg-4">
+        <div class=" form-group">
+            Image Path :
+            @Html.TextBoxFor(expression: model => model.imagePath,
+            htmlAttributes: new { type = "file", @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+           
+            <input type="submit" name="save" value="Save" formaction="Index"
+                   formmethod="post" class="btn btn-primary" id="btnsave" />
+
+            <input type="submit" name="Reset" value="Reset" formaction="Index"
+                   formmethod="post" class="btn btn-danger" id="btnreset" />
+            
+        </div>
+
+    </div>
+   
+</div>
+
