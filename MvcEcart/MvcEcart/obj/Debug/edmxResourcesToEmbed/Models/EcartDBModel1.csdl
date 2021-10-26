@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ECartDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="categoryId">
+    <Key>
+      <PropertyRef Name="categoryId1" />
+    </Key>
+    <Property Name="categoryId1" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categorycode" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="categoryName" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="item">
+    <Key>
+      <PropertyRef Name="itemId" />
+      <PropertyRef Name="cateogoryId" />
+      <PropertyRef Name="itemCode" />
+      <PropertyRef Name="itemName" />
+      <PropertyRef Name="imagePath" />
+      <PropertyRef Name="itemPrice" />
+    </Key>
+    <Property Name="itemId" Type="Guid" Nullable="false" />
+    <Property Name="cateogoryId" Type="Int32" Nullable="false" />
+    <Property Name="itemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="itemName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="imagePath" Type="String" MaxLength="550" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="itemPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ECartDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categoryIds" EntityType="Self.categoryId" />
+    <EntitySet Name="items" EntityType="Self.item" />
+  </EntityContainer>
+</Schema>
