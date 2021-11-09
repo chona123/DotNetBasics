@@ -2,3 +2,8 @@ d:\users\rchockalingam\documents\visual studio 2013\Projects\Inheritance_sample\
 d:\users\rchockalingam\documents\visual studio 2013\Projects\Inheritance_sample\Inheritance_sample\bin\Debug\Inheritance_sample.pdb
 d:\users\rchockalingam\documents\visual studio 2013\Projects\Inheritance_sample\Inheritance_sample\obj\Debug\Inheritance_sample.exe
 d:\users\rchockalingam\documents\visual studio 2013\Projects\Inheritance_sample\Inheritance_sample\obj\Debug\Inheritance_sample.pdb
+D:\Users\rchockalingam\sampleProjects\Basics\Inheritance_sample\Inheritance_sample\obj\Debug\Inheritance_sample.exe
+D:\Users\rchockalingam\sampleProjects\Basics\Inheritance_sample\Inheritance_sample\obj\Debug\Inheritance_sample.pdb
+D:\Users\rchockalingam\sampleProjects\Basics\Inheritance_sample\Inheritance_sample\bin\Debug\Inheritance_sample.exe
+D:\Users\rchockalingam\sampleProjects\Basics\Inheritance_sample\Inheritance_sample\bin\Debug\Inheritance_sample.pdb
+D:\Users\rchockalingam\sampleProjects\Basics\Inheritance_sample\Inheritance_sample\obj\Debug\Inheritance_sample.csprojResolveAssemblyReference.cache

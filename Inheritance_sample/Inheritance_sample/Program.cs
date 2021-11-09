@@ -24,6 +24,7 @@ namespace Inheritance_sample
         }
         public void Display()
         {
+            Console.WriteLine("CAlling DisplayFUnc");
             Console.WriteLine("Length: {0}", length);
             Console.WriteLine("Width: {0}", width);
             Console.WriteLine("Area: {0}", GetArea());
