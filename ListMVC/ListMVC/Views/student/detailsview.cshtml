@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ListMVC.Models.Student>
+
+
+
+
+@{
+    ViewBag.Title = "detailsview";
+
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.studentid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grade)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.studentid
+
+            </td>
+            <td>
+                @item.name
+            </td>
+
+
+            <td>
+                @item.Age
+            </td>
+            <td>
+                @item.grade
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.studentid }) |
+               
+            </td>
+        </tr>
+    }
+</table>

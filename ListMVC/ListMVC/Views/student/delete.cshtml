@@ -1,0 +1,62 @@
+﻿@model ListMVC.Models.Student
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = null;
+}
+
+
+   <h2>delete</h2>
+   
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h3>Are you sure you want to delete this?</h3>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.studentid)
+
+
+        <fieldset>
+
+            <legend>Student</legend>
+
+            <div class="display-label">
+                <b>@Html.DisplayNameFor(model => model.name)</b>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.name)
+            </div>
+
+            <div class="display-label">
+                <b> @Html.DisplayNameFor(model => model.grade)</b>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.grade)
+            </div>
+
+            <div class="display-label">
+                <b>@Html.DisplayNameFor(model => model.Age)</b>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Age)
+            </div>
+        </fieldset>
+
+        <p>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Delete" class="btn btn-default" />
+                </div>
+            </div>
+
+        </p>
+    </div>
+
+
+
+        <div>
+            @Html.ActionLink("Back to List", "details")
+        </div>
+}

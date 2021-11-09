@@ -1,0 +1,54 @@
+﻿@model ListMVC.Models.Student
+
+@{
+    ViewBag.Title = "Detailsview1";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student Detail</title>
+</head>
+<body>
+   
+    <fieldset>
+        <legend>Student</legend>
+
+        <div class="display-label">
+            <b>@Html.DisplayNameFor(model => model.name)</b>
+        </div>
+        <div class="display-field">
+             @Html.DisplayFor(model => model.name)
+        </div>
+
+        <div class="display-label">
+            <b> @Html.DisplayNameFor(model => model.grade)</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.grade)
+        </div>
+
+        <div class="display-label">
+            <b>@Html.DisplayNameFor(model => model.Age)</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Age)
+        </div>
+    </fieldset>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <p>
+    
+            @Html.ActionLink("Edit", "Edit", new { id= Model.studentid }) |
+            @Html.ActionLink("Back to List", "details")
+           
+       
+        </p>
+    }
+
+</body>
+</html>

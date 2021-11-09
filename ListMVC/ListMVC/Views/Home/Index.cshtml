@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Countries</h2>
+<ul>
+   
+        @foreach(string resultcountry in ViewBag.countries)
+        {
+           <li>
+               @resultcountry
+           </li>
+        }
+
+    <li>@Html.ActionLink("API", "EmpIndex", "Employee")</li>
+   
+</ul>
