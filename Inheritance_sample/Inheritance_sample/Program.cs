@@ -30,10 +30,10 @@ namespace Inheritance_sample
             Console.WriteLine("Area: {0}", GetArea());
         }
     }
-    class Rect_cost : Rectangle
+    class RectCost : Rectangle
     {
         // private double cost;
-        public Rect_cost(double l, double w) : base(l, w) { }
+        public RectCost(double l, double w) : base(l, w) { }
 
         public double GetCost()
         {
@@ -41,7 +41,7 @@ namespace Inheritance_sample
             cost = GetArea() * 50;
             return cost;
         }
-        public void Cost_Display()
+        public void CostDisplay()
         {
             base.Display();
             Console.WriteLine("Cost: {0}", GetCost());
@@ -51,8 +51,8 @@ namespace Inheritance_sample
     {
         static void Main(string[] args)
         {
-            Rect_cost objRect = new Rect_cost(3, 5.5);
-            objRect.Cost_Display();
+            RectCost objRect = new RectCost(3, 5.5);
+            objRect.CostDisplay(); 
             Console.ReadLine();
         }
     }
