@@ -7,3 +7,14 @@ D:\Users\rchockalingam\documents\visual studio 2013\Projects\SchoolContext\Schoo
 D:\Users\rchockalingam\documents\visual studio 2013\Projects\SchoolContext\SchoolContext\obj\Debug\SchoolContext.csprojResolveAssemblyReference.cache
 D:\Users\rchockalingam\documents\visual studio 2013\Projects\SchoolContext\SchoolContext\obj\Debug\SchoolContext.exe
 D:\Users\rchockalingam\documents\visual studio 2013\Projects\SchoolContext\SchoolContext\obj\Debug\SchoolContext.pdb
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\SchoolContext.exe
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\SchoolContext.pdb
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\Bogus.dll
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\Newtonsoft.Json.dll
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\Bogus.xml
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\bin\Debug\Newtonsoft.Json.xml
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\obj\Debug\SchoolContext.csproj.AssemblyReference.cache
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\obj\Debug\SchoolContext.csproj.CoreCompileInputs.cache
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\obj\Debug\SchoolContext.csproj.CopyComplete
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\obj\Debug\SchoolContext.exe
+D:\Users\rchockalingam\sampleProjects\Basics\SchoolContext\SchoolContext\obj\Debug\SchoolContext.pdb

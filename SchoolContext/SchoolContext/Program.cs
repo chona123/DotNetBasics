@@ -16,27 +16,29 @@ namespace SchoolContext
 
 
         public string Name { get { return _name; } }
-       // public int Age { get { return _age; } }
+        // public int Age { get { return _age; } }
 
         public string Role { get { return _role; } }
 
-        public int IsAllowedAge { 
+        public int IsAllowedAge
+        {
             set
             {
-                if(_age < 20)
+                if (_age < 20)
                 {
                     throw new Exception("UnderAge Category");
                 }
                 this._age = value;
-                 
+
 
             }
-            get{
+            get
+            {
 
                 return _age;
             }
-        
-        
+
+
         }
 
         public Employee(string Name, int Age, String Role)
@@ -104,7 +106,7 @@ namespace SchoolContext
         }
         public override void Salary(int Sal)
         {
-             Console.WriteLine("Name: {0} Age: {1} Role: {2}", Name, IsAllowedAge, Role);
+            Console.WriteLine("Name: {0} Age: {1} Role: {2}", Name, IsAllowedAge, Role);
             Console.WriteLine("Teacher Salary: {0}", Sal);
 
         }
@@ -123,7 +125,7 @@ namespace SchoolContext
         }
         public override void Salary(int Sal)
         {
-             Console.WriteLine("Name: {0} Age: {1} Role: {2}", Name, IsAllowedAge, Role);
+            Console.WriteLine("Name: {0} Age: {1} Role: {2}", Name, IsAllowedAge, Role);
             Console.WriteLine("Admin Salary: {0}", Sal);
 
         }
@@ -158,11 +160,8 @@ namespace SchoolContext
         {
 
             BogusClass objbogus = new BogusClass();
+           // objbogus.SetDetails();
             objbogus.Getdetails();
-
-
-
-
 
 
             //Principal objPr = new Principal("Rahul", 45, "Principal");
@@ -172,7 +171,7 @@ namespace SchoolContext
             {
                 Teacher objTeacher = new Teacher("Akil", 30, "Teacher");
                 //objTeacher.IsAllowedAge = 15;
-             
+
 
 
                 objTeacher.Salary(30000);
@@ -203,7 +202,7 @@ namespace SchoolContext
             StandardTen objTen = new StandardTen();
             objTen.GetStudent();
 
-            
+
 
 
 

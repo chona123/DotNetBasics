@@ -34,7 +34,8 @@ namespace SchoolContext
                    .RuleFor(c => c.PhoneNumber, f => f.Person.Phone);
 
             var users = fakedetails.Generate(10);
-            fakedetails.Validate();
+          bool result =  fakedetails.Validate();
+           Console.WriteLine(result);
            return users;
 
         }
@@ -43,7 +44,8 @@ namespace SchoolContext
         {
            BogusClass objBogus = new BogusClass();
            var list  = objBogus.SetDetails();
-           foreach (var Newitems in list)
+           
+            foreach (var Newitems in list)
            {
                Console.WriteLine("FirstName: {0}     lastName: {1}  Building No: {2}   City: {3}   Country: {4}    phone: {5}", Newitems.FirstName, Newitems.lastName, Newitems.Address1, Newitems.Address2, Newitems.Address3, Newitems.PhoneNumber);
 
