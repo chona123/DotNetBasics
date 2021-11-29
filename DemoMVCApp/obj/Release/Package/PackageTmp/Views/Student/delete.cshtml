@@ -1,0 +1,62 @@
+﻿@model DemoMVCApp.Models.Student
+@{
+    ViewBag.Title = "delete";
+}
+
+
+
+<h2>Delete</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h3>Are you sure you want to delete this?</h3>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.StudentName)
+
+
+    <fieldset>
+
+        <legend>Student</legend>
+        <div class="display-label">
+            <b> @Html.DisplayNameFor(model => model.Id)</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Id)
+        </div>
+
+        <div class="display-label">
+            <b>@Html.DisplayNameFor(model => model.StudentName)</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.StudentName)
+        </div>
+
+        <div class="display-label">
+            <b> @Html.DisplayNameFor(model => model.Grade)</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Grade)
+        </div>
+
+
+    </fieldset>
+
+        <p>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Delete" class="btn btn-default" />
+                </div>
+            </div>
+
+        </p>
+    </div>
+
+
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+}

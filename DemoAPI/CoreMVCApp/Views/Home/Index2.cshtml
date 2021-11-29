@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "API RESPONSE";
+}
+
+@model List<CoreMVCApp.Models.UserInformation>
+
+
+
+@{
+    ViewBag.Title = "GetList";
+}
+
+<h2>Response</h2>
+
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        <div>
+            @item.Summary
+        </div>
+
+        @*<div>
+            @item.Grade
+        </div>
+
+        <div>
+
+            @item.Gender
+        </div>*@
+
+       
+        <br />
+
+
+    }
+
+</div>
+

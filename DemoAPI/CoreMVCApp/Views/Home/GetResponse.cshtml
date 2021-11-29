@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "GetResponse";
+}
+
+<h1>GetResponse</h1>
+
+@model List<CoreMVCApp.Models.UserInformation>
+
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        <div>
+            @item.Summary
+        </div>
+
+        @*<div>
+                @item.Grade
+            </div>
+
+            <div>
+
+                @item.Gender
+            </div>*@
+
+
+        <br />
+
+
+    }
+
+</div>
+

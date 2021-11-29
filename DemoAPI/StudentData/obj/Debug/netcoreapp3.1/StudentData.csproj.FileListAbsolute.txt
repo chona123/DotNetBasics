@@ -1,0 +1,10 @@
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\bin\Debug\netcoreapp3.1\StudentData.deps.json
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\bin\Debug\netcoreapp3.1\StudentData.dll
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\bin\Debug\netcoreapp3.1\StudentData.pdb
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.csproj.AssemblyReference.cache
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.AssemblyInfoInputs.cache
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.AssemblyInfo.cs
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.csproj.CoreCompileInputs.cache
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.dll
+D:\Users\rchockalingam\source\repos\DemoAPI\StudentData\obj\Debug\netcoreapp3.1\StudentData.pdb

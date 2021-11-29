@@ -1,0 +1,35 @@
+﻿@model DemoMVCApp.ViewModel.DataViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<h2>@Model.Teacher.Name</h2>
+<h5>@Model.Teacher.EmpId </h5>
+
+<div>
+
+    <ul>
+
+
+        @foreach (var items in Model.Students)
+        {
+            <li>
+                @items.Id, @items.StudentName, @items.Grade
+
+            </li>
+            <div>
+                @Html.ActionLink("Edit", "Edit", new { id = items.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new { id = items.Id })
+            </div>
+
+
+        }
+
+    </ul>
+</div>
+
+
+
+
+
+
+
